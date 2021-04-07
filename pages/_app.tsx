@@ -1,15 +1,16 @@
 import { AppProps } from 'next/dist/next-server/lib/router/router';
 import '../styles/globals.css';
 import Head from 'next/head';
+import React from 'react';
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
-	return <div>
+	return <>
 		<Head>
-			<title>Create Next</title>
-			<link key={1} rel="icon" href="/favicon2.ico" />
+			<title>MyTop - наш лучший топ</title>
+			<link rel="icon" href="/favicon.ico" />
 		</Head>
 		<Component {...pageProps} />
-	</div>;
+	</>;
 }
 
 export default MyApp;
