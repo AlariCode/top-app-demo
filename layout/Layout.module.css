@@ -37,7 +37,7 @@
 	}
 
 	.sidebar {
-		display: none;
+		display: none !important;
 	}
 
 	.header {
