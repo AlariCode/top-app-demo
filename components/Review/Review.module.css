@@ -1,0 +1,43 @@
+.review {
+	display: grid;
+	grid-template-columns: [start] auto 1fr auto auto [end];
+
+	align-items: center;
+	gap: 10px;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.description {
+	grid-column: start / end;
+}
+
+.date {
+	margin-right: 10px;
+}
+
+.name {
+	font-weight: bold;
+}
+
+@media screen and (max-width: 640px) {
+	.review {
+		grid-template-columns: [start] 30px [titlestart] auto [dateend] 1fr [end];
+	}
+	.title {
+		grid-column: titlestart / end;			
+	}
+	.date {
+		grid-column: start / dateend;			
+
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.date {
+		grid-column: start / end;			
+	}
+	.rating {
+		grid-column: start / end;			
+	}
+}
