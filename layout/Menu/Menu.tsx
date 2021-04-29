@@ -16,7 +16,7 @@ export const Menu = (): JSX.Element => {
 		visible: {
 			marginBottom: 20,
 			transition: {
-				when: 'beforeChiildren',
+				when: 'beforeChildren',
 				staggerChildren: 0.1
 			}
 		},
