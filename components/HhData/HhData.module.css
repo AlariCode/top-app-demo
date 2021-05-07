@@ -6,13 +6,16 @@
 
 .count {
 	padding: 20px;
+
 	text-align: center;
 }
 
 .salary {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+
 	padding: 20px;
+
 	text-align: center;
 	gap: 20px 0;
 }
@@ -26,30 +29,34 @@
 }
 
 .title {
-	font-weight: 300;
-	font-size: 20px;
-	line-height: 27px;
 	margin-bottom: 10px;
+
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 27px;
 }
 
 .countValue {
-	font-weight: bold;
-	font-size: 36px;
-	line-height: 49px;
 	color: var(--primary);
+
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 49px;
 }
 
 .salaryValue {
-	font-weight: bold;
-	font-size: 26px;
-	line-height: 35px;
 	margin-bottom: 10px;
+
+	font-size: 26px;
+	font-weight: bold;
+	line-height: 35px;
 }
 
 .rate {
 	display: grid;
 	grid-template-columns: repeat(3, 20px);
 	gap: 10px;
+
 	justify-content: center;
 }
 
@@ -69,13 +76,15 @@
 	}
 
 	.salary > div {
+		padding-bottom: 20px;
+
 		border-right: none;
 		border-bottom: 1px solid var(--gray-light);
-		padding-bottom: 20px;
 	}
 
 	.salary > div:last-child {
 		padding-bottom: 0;
+
 		border-bottom: none;
 	}
 }

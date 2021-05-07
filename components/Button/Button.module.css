@@ -5,12 +5,13 @@
 	padding: 10px;
 
 	cursor: pointer;
+	transition: all 0.2s;
 	text-align: center;
+
 	border: none;
 	border-radius: 5px;
 
 	font-size: 14px;
-	transition: all 0.2s;
 }
 
 .primary {
@@ -24,8 +25,8 @@
 
 .ghost {
 	color: var(--black);
-	background: none;
 	border: 1px solid var(--gray-light);
+	background: none;
 }
 
 .ghost:hover {
@@ -40,8 +41,8 @@
 }
 
 .down {
-	transform: rotate(90deg);
 	transition: all 0.2s;
+	transform: rotate(90deg);
 }
 
 .primary svg,

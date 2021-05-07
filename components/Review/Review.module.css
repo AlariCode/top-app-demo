@@ -4,6 +4,7 @@
 
 	align-items: center;
 	gap: 10px;
+
 	font-size: 14px;
 	line-height: 24px;
 }
@@ -24,20 +25,22 @@
 	.review {
 		grid-template-columns: [start] 30px [titlestart] auto [dateend] 1fr [end];
 	}
-	.title {
-		grid-column: titlestart / end;			
-	}
-	.date {
-		grid-column: start / dateend;			
 
+	.title {
+		grid-column: titlestart / end;
+	}
+
+	.date {
+		grid-column: start / dateend;
 	}
 }
 
 @media screen and (max-width: 640px) {
 	.date {
-		grid-column: start / end;			
+		grid-column: start / end;
 	}
+
 	.rating {
-		grid-column: start / end;			
+		grid-column: start / end;
 	}
 }

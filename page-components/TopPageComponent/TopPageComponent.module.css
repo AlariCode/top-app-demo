@@ -1,40 +1,46 @@
 .title {
 	display: grid;
 	grid-template-columns: auto 1fr auto;
+
 	align-items: baseline;
 	justify-items: left;
 	gap: 20px;
+
 	margin-bottom: 30px;
 }
 
 .hhTitle {
 	display: grid;
 	grid-template-columns: auto 1fr;
+
 	align-items: baseline;
 	justify-items: left;
 	gap: 20px;
 }
 
 .seo h1 {
-	font-weight: 500;
-	font-size: 26px;
-	line-height: 35px;
 	margin: 0;
+
+	font-size: 26px;
+	font-weight: 500;
+	line-height: 35px;
 }
 
 .seo h2 {
-	font-weight: 500;
-	font-size: 22px;
-	line-height: 30px;
 	margin-top: 50px;
 	margin-bottom: 25px;
+
+	font-size: 22px;
+	font-weight: 500;
+	line-height: 30px;
 }
 
 .seo h3 {
-	font-weight: 600;
-	font-size: 20px;
-	line-height: 27px;
 	margin: 0;
+
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 27px;
 }
 
 @media screen and (max-width: 640px) {
