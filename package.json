@@ -5,6 +5,7 @@
 	"scripts": {
 		"prepare": "husky install",
 		"dev": "next dev",
+		"export": "next export",
 		"debug": "NODE_OPTIONS='--inspect' next dev",
 		"build": "next build",
 		"start": "next start",

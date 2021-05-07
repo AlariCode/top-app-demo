@@ -1,17 +1,18 @@
 import { AppProps } from 'next/dist/next-server/lib/router/router';
 import '../styles/globals.css';
 import Head from 'next/head';
+import Router from 'next/router';
 import React from 'react';
 import ym from 'react-yandex-metrika';
 import { YMInitializer } from 'react-yandex-metrika';
 
-function MyApp({ Component, pageProps, router }: AppProps): JSX.Element {
-	router.events.on('routeChangeComplete', (url: string) => {
-		if (typeof window !== 'undefined') {
-			ym('hit', url);
-		}
-	});
+Router.events.on('routeChangeComplete', (url: string) => {
+	if (typeof window !== 'undefined') {
+		ym('hit', url);
+	}
+});
 
+function MyApp({ Component, pageProps, router }: AppProps): JSX.Element {
 	return <>
 		<Head>
 			<title>MyTop - наш лучший топ</title>
