@@ -2,13 +2,18 @@ module.exports = {
 	images: {
 		domains: ['courses-top.ru']
 	},
-	webpack(config) {
+	webpack(config, options) {
 		config.module.rules.push({
-			test: /\.svg$/,
-			issuer: {
-				test: /\.(js|ts)x?$/,
+			loader: '@svgr/webpack',
+			options: {
+				prettier: false,
+				svgo: true,
+				svgoConfig: {
+					plugins: [{ removeViewBox: false }],
+				},
+				titleProp: true,
 			},
-			use: ['@svgr/webpack'],
+			test: /\.svg$/,
 		});
 
 		return config;
