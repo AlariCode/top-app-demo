@@ -1,10 +1,10 @@
-import { AppProps } from 'next/dist/next-server/lib/router/router';
 import '../styles/globals.css';
 import Head from 'next/head';
 import Router from 'next/router';
 import React from 'react';
 import ym from 'react-yandex-metrika';
 import { YMInitializer } from 'react-yandex-metrika';
+import { AppProps } from 'next/dist/shared/lib/router/router';
 
 Router.events.on('routeChangeComplete', (url: string) => {
 	if (typeof window !== 'undefined') {

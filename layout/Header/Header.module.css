@@ -30,6 +30,6 @@
 		grid-template-columns: 1fr 40px;
 		gap: 10px;
 
-		margin: 15px 15px 0 15px;
+		margin: 15px 15px 0;
 	}
 }

@@ -6,7 +6,7 @@ body {
 	color: var(--black);
 	background: #F5F6F8;
 
-	font-family: 'Noto Sans KR', sans-serif;
+	font-family: "Noto Sans KR", sans-serif;
 }
 
 a {
@@ -40,5 +40,5 @@ a {
 	--red: #FC836D;
 	--green: #007B48;
 	--green-light: #C8F8E4;
-	--font-family: 'Noto Sans KR', sans-serif;
+	--font-family: "Noto Sans KR", sans-serif;
 }

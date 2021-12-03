@@ -11,7 +11,7 @@
 	border: none;
 	border-radius: 10px;
 	background: var(--primary);
-	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 4px 4px rgb(0 0 0 / 5%);
 }
 
 .up:hover {
